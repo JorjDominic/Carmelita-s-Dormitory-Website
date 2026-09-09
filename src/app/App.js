@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css';
+import routes from './routes';
 
 const rooms = [
   { name: 'Shared room', detail: 'A bright, comfortable room for two residents.', price: '₱6,500', image: 'https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=900&q=80', tags: ['2 beds', 'Shared bath'] },
@@ -23,7 +24,7 @@ function ArrowIcon() { return <span className="arrow-icon" aria-hidden="true">�
 function Header({ onInquire }) {
   const [open, setOpen] = useState(false);
   const close = () => setOpen(false);
-  return <header className="site-header"><div className="header-inner"><Brand /><button className="mobile-toggle" onClick={() => setOpen(!open)} aria-label="Toggle navigation" aria-expanded={open}>{open ? '×' : '☰'}</button><nav className={`site-nav ${open ? 'is-open' : ''}`}><a href="#about" onClick={close}>About us</a><a href="#rooms" onClick={close}>Rooms</a><a href="#amenities" onClick={close}>Amenities</a><a href="#gallery" onClick={close}>Gallery</a><a href="#contact" onClick={close}>Contact</a><button className="nav-cta" onClick={() => { close(); onInquire(); }}>Inquire now <ArrowIcon /></button></nav></div></header>;
+  return <header className="site-header"><div className="header-inner"><Brand /><button className="mobile-toggle" onClick={() => setOpen(!open)} aria-label="Toggle navigation" aria-expanded={open}>{open ? '×' : '☰'}</button><nav className={`site-nav ${open ? 'is-open' : ''}`}>{routes.map((route) => <a href={route.href} key={route.href} onClick={close}>{route.label}</a>)}<button className="nav-cta" onClick={() => { close(); onInquire(); }}>Inquire now <ArrowIcon /></button></nav></div></header>;
 }
 
 function Hero({ onInquire }) {
