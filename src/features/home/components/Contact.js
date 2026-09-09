@@ -1,0 +1,8 @@
+import ArrowIcon from '../../../shared/components/ArrowIcon';
+import SectionHeading from '../../../shared/components/SectionHeading';
+
+function Contact({ onSubmit }) {
+  return <section className="contact-section section" id="contact"><div className="contact-copy"><SectionHeading eyebrow="Start a conversation" title="Have a room in mind?" copy="Tell us a little about yourself and we’ll get back to you with current availability, rates, and a tour schedule." /><div className="contact-details"><div><span className="contact-icon">⌖</span><span><b>Find us</b><small>123 Sampaguita Street, Quezon City</small></span></div><div><span className="contact-icon">✆</span><span><b>Call or message</b><small>+63 917 555 0148 · hello@carmelitas.com</small></span></div><div><span className="contact-icon">◷</span><span><b>Visit hours</b><small>Monday to Saturday · 9 AM to 6 PM</small></span></div></div></div><form className="inquiry-form" onSubmit={onSubmit}><div className="form-row"><label>Full name<input required placeholder="Your name" /></label><label>Email address<input required type="email" placeholder="you@email.com" /></label></div><label>What are you looking for?<select defaultValue=""><option value="" disabled>Select a room type</option><option>Shared room</option><option>Private room</option><option>Deluxe room</option></select></label><label>Message<textarea required placeholder="Tell us your preferred move-in date or ask us anything..." rows="4" /></label><button className="button button-dark" type="submit">Send inquiry <ArrowIcon /></button></form></section>;
+}
+
+export default Contact;

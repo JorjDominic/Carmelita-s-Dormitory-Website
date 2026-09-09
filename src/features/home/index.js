@@ -1,0 +1,10 @@
+export { default as About } from './components/About';
+export { default as Amenities } from './components/Amenities';
+export { default as Contact } from './components/Contact';
+export { default as Footer } from './components/Footer';
+export { default as Gallery } from './components/Gallery';
+export { default as Header } from './components/Header';
+export { default as Hero } from './components/Hero';
+export { default as HouseRules } from './components/HouseRules';
+export { default as Rooms } from './components/Rooms';
+export { default as SuccessToast } from './components/SuccessToast';
