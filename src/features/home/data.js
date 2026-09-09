@@ -24,3 +24,9 @@ export const houseRules = [
   'Visitors are welcome until 9:00 PM with resident registration.',
   'Residents are responsible for their personal belongings.',
 ];
+
+export const contactDetails = [
+  { icon: '⌖', title: 'Find us', text: '123 Sampaguita Street, Quezon City' },
+  { icon: '✆', title: 'Call or message', text: '+63 917 555 0148 · hello@carmelitas.com' },
+  { icon: '◷', title: 'Visit hours', text: 'Monday to Saturday · 9 AM to 6 PM' },
+];
