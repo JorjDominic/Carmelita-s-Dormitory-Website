@@ -7,6 +7,7 @@ export { default as Header } from './components/Header';
 export { default as Hero } from './components/Hero';
 export { default as HouseRules } from './components/HouseRules';
 export { default as Rooms } from './components/Rooms';
+export { default as RouteMap } from './components/RouteMap';
 export { default as RoomCard } from './components/RoomCard';
 export { default as ServiceCard } from './components/ServiceCard';
 export { default as ContactDetails } from './components/ContactDetails';

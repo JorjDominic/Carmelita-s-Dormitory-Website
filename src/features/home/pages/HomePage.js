@@ -9,7 +9,9 @@ import Header from '../components/Header';
 import Hero from '../components/Hero';
 import HouseRules from '../components/HouseRules';
 import Rooms from '../components/Rooms';
+import RouteMap from '../components/RouteMap';
 import SuccessToast from '../components/SuccessToast';
+import { schoolRoute } from '../data';
 
 function HomePage() {
   const [notice, setNotice] = useState(false);
@@ -20,7 +22,7 @@ function HomePage() {
   };
   const scrollToContact = () => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });
 
-  return <div className="public-site"><Header onInquire={scrollToContact} /><main><Hero onInquire={scrollToContact} /><About /><Rooms /><Amenities /><Gallery /><HouseRules /><Contact onSubmit={handleSubmit} /></main><Footer />{notice && <SuccessToast onDismiss={() => setNotice(false)} />}</div>;
+  return <div className="public-site"><Header onInquire={scrollToContact} /><main><Hero onInquire={scrollToContact} /><About /><Rooms /><Amenities /><Gallery /><HouseRules /><RouteMap {...schoolRoute} /><Contact onSubmit={handleSubmit} /></main><Footer />{notice && <SuccessToast onDismiss={() => setNotice(false)} />}</div>;
 }
 
 export default HomePage;

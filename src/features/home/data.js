@@ -30,3 +30,11 @@ export const contactDetails = [
   { icon: '✆', title: 'Call or message', text: '+63 917 555 0148 · hello@carmelitas.com' },
   { icon: '◷', title: 'Visit hours', text: 'Monday to Saturday · 9 AM to 6 PM' },
 ];
+
+export const schoolRoute = {
+  origin: 'Carmelita’s Dormitory',
+  destination: 'Placeholder University Campus',
+  distance: '1.8 km',
+  duration: '24 min',
+  mode: 'Walking',
+};
