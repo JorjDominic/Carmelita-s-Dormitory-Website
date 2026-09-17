@@ -6,3 +6,4 @@ export { default as StatCard } from './components/StatCard';
 export { default as StatusBadge } from './components/StatusBadge';
 export { default as DataTable } from './components/DataTable';
 export { default as EmptyState } from './components/EmptyState';
+export { default as DashboardPage } from './pages/DashboardPage';

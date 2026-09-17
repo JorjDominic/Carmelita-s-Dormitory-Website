@@ -8,7 +8,7 @@ import Gallery from '../components/Gallery';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import HouseRules from '../components/HouseRules';
-import Rooms from '../components/Rooms';
+import { Rooms } from '../../products';
 import RouteMap from '../components/RouteMap';
 import SuccessToast from '../components/SuccessToast';
 import { schoolRoute } from '../data';
